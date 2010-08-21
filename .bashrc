@@ -93,3 +93,4 @@ alias lsl='ls -l'
 if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
+source /home/puny/perl5/perlbrew/etc/bashrc
