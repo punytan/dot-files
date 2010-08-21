@@ -62,3 +62,9 @@ nnoremap <silent><C-p> :bp<CR>
 nnoremap <silent><F2> :tabp<CR>
 nnoremap <silent><F3> :tabn<CR>
 nnoremap :te :tabedit
+
+inoremap <C-a> <HOME>
+inoremap <C-e> <END>
+inoremap <C-f> <RIGHT>
+inoremap <C-b> <LEFT>
+
