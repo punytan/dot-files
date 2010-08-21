@@ -44,7 +44,7 @@ set shiftround                    "Indent/outdent to nearest tabstop
  
 set matchpairs+=<:>               "Allow % to bounce between angles too
  
-"Inserting these abbreviations inserts the corresponding Perl statement...
+" Inserting these abbreviations inserts the corresponding Perl statement...
 iab phbp #! /usr/bin/perl -w      
 iab phbg use Data::Dumper 'Dumper'; ^Mwarn Dumper [];^[hi
 iab pdmk use Benchmark qw( cmpthese );^Mcmpthese -10, {};^[O
@@ -54,17 +54,26 @@ iab putm use Test::More qw( no_plan );
 iab papp ^[:r ~/.code_templates/perl_application.pl^M
 iab pmod ^[:r ~/.code_templates/perl_module.pm^M
 
-"Buffer Settings
+" Buffer Settings
 nnoremap <silent><C-n> :bn<CR>
 nnoremap <silent><C-p> :bp<CR>
 
-"Tab Settings
+" Tab Settings
 nnoremap <silent><F2> :tabp<CR>
 nnoremap <silent><F3> :tabn<CR>
 nnoremap :te :tabedit
 
+" move cursor in insert mode
 inoremap <C-a> <HOME>
 inoremap <C-e> <END>
 inoremap <C-f> <RIGHT>
 inoremap <C-b> <LEFT>
+
+" Gtags
+map <C-g> :Gtags 
+map <C-i> :Gtags -f %<CR>
+map <C-j> :GtagsCursor<CR>
+
+" bufferlist.vim
+map <silent><F7> :call BufferList()<CR>
 
