@@ -24,6 +24,7 @@ augroup END
 
 augroup filetypedetect
 au! BufRead,BufNewFile *.psgi setfiletype perl
+au! BufRead,BufNewFile *.xt setfiletype html
 augroup END
 
 "############################################################################
