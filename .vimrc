@@ -1,20 +1,45 @@
 syntax on
+
+filetype on
+filetype plugin on
 filetype plugin indent on
+
+" encoding
 set encoding=utf-8
 set fileencoding=utf-8
-set fileencodings=utf-8,iso-2022-jp,euc-jp,ucs-2,cp932,sjis
-set number
+set fileencodings=utf-8,iso-2022-jp,euc-jp,cp932,sjis,ascii
+
+" search
 set incsearch
 set ignorecase
 set showmatch
+set hlsearch
+
+" view
+set number
 set showmode
 set title
 set ruler
 set laststatus=2
-set hlsearch
 set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P
+
+" edit
+set autoindent
+set backspace=indent,eol,start
+set tabstop=4
+set expandtab
+set shiftwidth=4
+set shiftround
+set matchpairs+=<:>
+
+" edit perl
+set iskeyword+=:
+set complete+=k~/.vim/extra/installed_modules
+
+" colorscheme
 colorscheme wombat 
 
+" skelton
 augroup SkeltonAu
     autocmd!
     autocmd BufNewFile  *.html 0r $HOME/.vim/templates/skel.html
@@ -22,46 +47,23 @@ augroup SkeltonAu
     autocmd BufNewFile  *.css  0r $HOME/.vim/templates/skel.css
 augroup END
 
+" filetypedetect
 augroup filetypedetect
-au! BufRead,BufNewFile *.psgi setfiletype perl
-au! BufRead,BufNewFile *.xt setfiletype html
+    au! BufRead,BufNewFile *.psgi setfiletype perl
+    au! BufRead,BufNewFile *.xt setfiletype html
 augroup END
+ 
+" abbreviation
+"iab phbp #! /usr/bin/perl -w
 
-"############################################################################
-"#    Vim config (Recommended) from Appendix C of "Perl Best Practices"     #
-"#     Copyright (c) O'Reilly & Associates, 2005. All Rights Reserved.      #
-"#  See: http://www.oreilly.com/pub/a/oreilly/ask_tim/2001/codepolicy.html  #
-"############################################################################
-
-set autoindent                    "Preserve current indent on new lines
-"set textwidth=78                  "Wrap at this column
-set backspace=indent,eol,start    "Make backspaces delete sensibly
- 
-set tabstop=4                     "Indentation levels every four columns
-set expandtab                     "Convert all tabs typed to spaces
-set shiftwidth=4                  "Indent/outdent by four columns
-set shiftround                    "Indent/outdent to nearest tabstop
- 
-set matchpairs+=<:>               "Allow % to bounce between angles too
- 
-" Inserting these abbreviations inserts the corresponding Perl statement...
-iab phbp #! /usr/bin/perl -w      
-iab phbg use Data::Dumper 'Dumper'; ^Mwarn Dumper [];^[hi
-iab pdmk use Benchmark qw( cmpthese );^Mcmpthese -10, {};^[O
-iab pusc use Smart::Comments;^M^M###
-iab putm use Test::More qw( no_plan );
- 
-iab papp ^[:r ~/.code_templates/perl_application.pl^M
-iab pmod ^[:r ~/.code_templates/perl_module.pm^M
-
-" Buffer Settings
+" buffer
 nnoremap <silent><C-n> :bn<CR>
 nnoremap <silent><C-p> :bp<CR>
 
-" Tab Settings
+" tab
 nnoremap <silent><F2> :tabp<CR>
 nnoremap <silent><F3> :tabn<CR>
-nnoremap :te :tabedit
+nnoremap :te :tabedit 
 
 " move cursor in insert mode
 inoremap <C-a> <HOME>
@@ -69,11 +71,16 @@ inoremap <C-e> <END>
 inoremap <C-f> <RIGHT>
 inoremap <C-b> <LEFT>
 
-" Gtags
+" gtags.vim
 map <C-g> :Gtags 
 map <C-i> :Gtags -f %<CR>
 map <C-j> :GtagsCursor<CR>
 
 " bufferlist.vim
 map <silent><F7> :call BufferList()<CR>
+
+" quickfix
+map <silent><C-c> :cn<CR>
+map <silent><C-C> :cN<CR>
+map <silent><C-l> :cl<CR>
 

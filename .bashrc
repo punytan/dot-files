@@ -80,12 +80,7 @@ if [ "$TERM" != "dumb" ] && [ -x /usr/bin/dircolors ]; then
     #alias egrep='egrep --color=auto'
 fi
 
-# some more ls aliases
-#alias ll='ls -l'
-#alias la='ls -A'
-#alias l='ls -CF'
 alias la='ls -la'
-alias lsl='ls -l'
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
@@ -93,4 +88,9 @@ alias lsl='ls -l'
 if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
+
 source /home/puny/perl5/perlbrew/etc/bashrc
+
+function pmver () { perl -M$1 -le "print \$$1::VERSION"; }
+
+export PATH=$PATH:/usr/local/mysql/bin
