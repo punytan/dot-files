@@ -1,3 +1,4 @@
+set t_Co=256
 syntax on
 
 filetype on
@@ -84,3 +85,10 @@ map <silent><C-c> :cn<CR>
 map <silent><C-C> :cN<CR>
 map <silent><C-l> :cl<CR>
 
+" neo
+let g:neocomplcache_enable_at_startup=1
+let g:neocomplcache_enable_auto_select=1
+au FileType perl setlocal include=
+
+" guivimscheme
+au VimEnter * GuiColorScheme wombat

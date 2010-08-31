@@ -94,3 +94,4 @@ source /home/puny/perl5/perlbrew/etc/bashrc
 function pmver () { perl -M$1 -le "print \$$1::VERSION"; }
 
 export PATH=$PATH:/usr/local/mysql/bin
+export PATH=$HOME/local/bin:$PATH
