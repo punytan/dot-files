@@ -19,12 +19,14 @@ let colors_name = "wombat"
 " Vim >= 7.0 specific colors
 if version >= 700
   hi CursorLine   guibg=#2d2d2d
-  hi CursorColumn guibg=#2d2d2d
+  hi CursorColumn guibg=#ffffff
   hi MatchParen   guifg=#f6f3e8 guibg=#857b6f gui=bold
   hi Pmenu 		  guifg=#f6f3e8 guibg=#444444
   hi PmenuSel 	  guifg=#000000 guibg=#cae682
 endif
 
+hi Search ctermbg=74
+hi Pmenu ctermbg=234
 " General colors
 hi Cursor 		guifg=NONE    guibg=#656565 gui=none
 hi Normal 		guifg=#ffffff guibg=#242424 gui=none
