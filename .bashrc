@@ -80,7 +80,7 @@ if [ "$TERM" != "dumb" ] && [ -x /usr/bin/dircolors ]; then
     #alias egrep='egrep --color=auto'
 fi
 
-alias la='ls -la'
+alias la='ls -lah'
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile

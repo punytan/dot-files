@@ -29,10 +29,10 @@ hi Search ctermbg=74
 hi Pmenu ctermbg=234
 " General colors
 hi Cursor 		guifg=NONE    guibg=#656565 gui=none
-hi Normal 		guifg=#ffffff guibg=#242424 gui=none
-hi NonText 		guifg=#808080 guibg=#303030 gui=none
-hi LineNr 		guifg=#cccc33 guibg=#000000 gui=none
-hi StatusLine 	guifg=#ffffff guibg=#000000 gui=italic
+hi Normal 		guifg=#ffffff guibg=none    gui=none
+hi NonText 		guifg=#808080 guibg=none    gui=none
+hi LineNr 		guifg=#cccc33 guibg=none    gui=none
+hi StatusLine 	guifg=#ffffff guibg=none    gui=italic
 hi StatusLineNC guifg=#444444 guibg=#AAAAAA gui=none
 hi VertSplit 	guifg=#444444 guibg=#444444 gui=none
 hi Folded 		guibg=#384048 guifg=#a0a8b0 gui=none
