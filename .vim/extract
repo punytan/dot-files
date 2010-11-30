@@ -1,3 +1,0 @@
-#!/usr/bin/env perl
-
-perl -MExtUtils::Installed -le 'print  for ExtUtils::Installed->new->modules' > /home/puny/.vim/extra/installed_modules

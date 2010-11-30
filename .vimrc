@@ -1,6 +1,10 @@
 set t_Co=256
 syntax on
 
+filetype off
+call pathogen#helptags()
+call pathogen#runtime_append_all_bundles()
+
 filetype on
 filetype plugin on
 filetype plugin indent on
@@ -92,3 +96,4 @@ au FileType perl setlocal include=
 
 " guivimscheme
 au VimEnter * GuiColorScheme wombat
+
