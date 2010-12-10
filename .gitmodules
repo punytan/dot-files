@@ -6,7 +6,7 @@
 	url = git://github.com/thinca/vim-guicolorscheme.git
 [submodule ".vim/bundle/quickrun"]
 	path = .vim/bundle/quickrun
-	url = https://github.com/thinca/vim-quickrun.git
+	url = git://github.com/thinca/vim-quickrun.git
 [submodule ".vim/bundle/unite"]
 	path = .vim/bundle/unite
 	url = git://github.com/Shougo/unite.vim.git
