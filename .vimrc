@@ -9,6 +9,9 @@ filetype on
 filetype plugin on
 filetype plugin indent on
 
+" swap
+set dir=~/.vim/swap//,.
+
 " encoding
 set encoding=utf-8
 set fileencoding=utf-8
