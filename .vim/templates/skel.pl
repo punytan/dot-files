@@ -1,4 +1,4 @@
-use common::sense;
+use practical;
 use Encode;
 use Data::Dumper;
 
