@@ -81,7 +81,7 @@ if [ "$TERM" != "dumb" ] && [ -x /usr/bin/dircolors ]; then
 fi
 
 alias la='ls -lah'
-alias irc='screen -dr 622'
+alias irc='screen -dr 3517'
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
