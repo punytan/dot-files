@@ -98,3 +98,5 @@ function pidof () { ps aux | grep $1; }
 
 export PATH=$PATH:/usr/local/mysql/bin
 export PATH=$HOME/local/bin:$PATH
+
+export PAGER=less
