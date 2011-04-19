@@ -8,11 +8,11 @@ cd "$HOME/dot-files/vim/bundle";
 
 case $1 in
     'install')
-        `git clone git://github.com/thinca/vim-guicolorscheme.git`;
-        `git clone git://github.com/Shougo/neocomplcache.git`;
-        `git clone git://github.com/thinca/vim-quickrun.git`;
-        `git clone git://github.com/Shougo/unite.vim.git`;
-        `git clone git://github.com/thinca/vim-ref.git`;
+        git clone git://github.com/thinca/vim-guicolorscheme.git;
+        git clone git://github.com/Shougo/neocomplcache.git;
+        git clone git://github.com/thinca/vim-quickrun.git;
+        git clone git://github.com/Shougo/unite.vim.git;
+        git clone git://github.com/thinca/vim-ref.git;
         ;;
     'upgrade')
         dirlista=`find . -maxdepth 1 -type d -print`;
