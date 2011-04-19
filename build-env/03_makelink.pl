@@ -12,6 +12,7 @@ my %file = (
     '.screenrc'     => 'screenrc',
     '.ssh/config'   => 'ssh/config',
     '.vimrc'        => 'vim/vimrc',
+    '.module-setup' => 'module-setup',
 );
 
 for my $dot (keys %file) {

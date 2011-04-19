@@ -1,0 +1,10 @@
+---
+author: punytan
+class: Module::Setup::Flavor::Default
+email: punytan@gmail.com
+plugins:
+  - Config::Basic
+  - Template
+  - Test::Makefile
+  - Additional
+  - VC::Git
