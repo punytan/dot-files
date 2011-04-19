@@ -1,0 +1,4 @@
+alias la='ls -hal'
+
+function pidof { ps aux | grep $1; }
+

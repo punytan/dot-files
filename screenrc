@@ -1,0 +1,14 @@
+startup_message off
+
+defbce on
+
+zombie ^[
+
+defscrollback 5000
+
+markkeys h=^B:l=^F:$=^E:^U=^Z:^D=^V
+
+# apt-get isntall ncurses-term # on debian.
+term screen-256color
+
+shell /bin/bash

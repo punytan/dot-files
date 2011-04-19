@@ -1,0 +1,44 @@
+
+function pm {
+    case $1 in
+        'install')
+            shift 1
+            cpanm "$@"
+            ;;
+        'uninstall')
+            shift 1
+            pm-uninstall "$@"
+            ;;
+        'outdated')
+            shift 1
+            cpan-outdated "$@"
+            ;;
+        'upgrade')
+            shift 1
+            cpan-outdated -p | cpanm "$@"
+            ;;
+        'version')
+            shift 1
+            while [ "$1" != "" ] ; do
+                perl -M$1 -le "print qq{$1 \$$1::VERSION}"
+                shift 1
+            done
+            ;;
+        'changes')
+            shift 1
+            cpan-listchanges "$@"
+            ;;
+        *)
+            cat << EOM
+Usage:
+    pm install AnyEvent Task::Kensho::Async
+    pm uninstall Task::Kensho::Async
+    pm outdated
+    pm upgrade
+    pm version AnyEvent
+    pm changes URI
+EOM
+            ;;
+    esac
+}
+

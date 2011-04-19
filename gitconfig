@@ -1,0 +1,16 @@
+[user]
+    name = punytan
+    email = punytan@gmail.com
+
+[color]
+    ui = auto
+
+[core]
+     editor = vim
+
+[alias]
+    co = checkout
+    br = branch
+    ci = commit
+    st = status
+    df = diff

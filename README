@@ -1,0 +1,68 @@
+Dot-files And Environment Builder
+
+* OVERVIEW
+Use $HOME/dot-files directory for updating config.
+Deleting $HOME/dot-files directory must break environment.
+
+In this vim settings, I use pathogen.vim but I do not use git-submodule
+because git-submodule style would affect .git/config file. Additionally,
+it is difficult to manage plugins with git-submodule. Why do we have to
+dispatch git command every plugin installation time? Anyway, to make
+plugins work, running build-env/05_vimbundle.sh is required. When you want
+to use additional vim plugin, edit build-env/05_vimbundle.sh, then install
+and upgrade vim plugins.
+
+* STEPS
+1. Configure sshd, edit /etc/apt/sources.list and run apt-get dist-upgrade
+2. Run build-env/01_apt.sh as root to install git-core package
+3. Run build-env/02_perlenv.sh as user
+4. Run build-env/03_makelink.pl as user to make symlinks
+5. Run build-env/04_servers.sh as root if you want to use optional apt packages
+6. Run build-env/05_vimbundle.sh as user to clone vim plugins
+7. Run `cat build-env/06_perl-modules.list | xargs cpanm` as user if you want to use modules
+
+* TREE
+|-- README
+|-- bash
+|   |-- aliases
+|   |-- darwin
+|   |-- linux
+|   |-- logout
+|   |-- pm-tools
+|   `-- rc
+|-- build-env
+|   |-- 01_apt.sh
+|   |-- 02_perlenv.sh
+|   |-- 03_makelink.pl
+|   |-- 04_servers.sh
+|   |-- 05_vimbundle.sh
+|   `-- 06_perl-modules.list
+|-- gitconfig
+|-- my.cnf
+|-- screenrc
+|-- ssh
+|   `-- config
+`-- vim
+    |-- autoload
+    |   `-- pathogen.vim
+    |-- bundle
+    |-- colors
+    |   `-- wombat.vim
+    |-- templates
+    |   |-- skel.css
+    |   |-- skel.html
+    |   |-- skel.html4
+    |   `-- skel.pl
+    `-- vimrc
+
+* DETAILS
+- bash/                       ... bash settings
+- vim/                        ... vim settings
+- build-env
+  |-- 01_apt.sh               ... apt packages
+  |-- 02_perlenv.sh           ... install perlbrew environment
+  |-- 03_makelink.pl          ... make symlinks to this folder
+  |-- 04_servers.sh           ... optional apt packages (web database)
+  |-- 05_vimbundle.sh         ... install and upgrade vim plugins
+  `-- 06_perl-modules.list    ... module lists
+

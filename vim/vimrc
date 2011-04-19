@@ -1,0 +1,102 @@
+set t_Co=256
+syntax on
+
+filetype off
+call pathogen#helptags()
+call pathogen#runtime_append_all_bundles()
+
+filetype on
+filetype plugin on
+filetype plugin indent on
+
+" swap
+set dir=/tmp//,.
+
+" encoding
+set encoding=utf-8
+set fileencoding=utf-8
+set fileencodings=utf-8,iso-2022-jp,euc-jp,cp932,sjis,ascii
+
+" search
+set incsearch
+set ignorecase
+set showmatch
+set hlsearch
+
+" view
+set number
+set showmode
+set title
+set ruler
+set laststatus=2
+set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P
+
+" edit
+set autoindent
+set backspace=indent,eol,start
+set tabstop=4
+set expandtab
+set shiftwidth=4
+set shiftround
+set matchpairs+=<:>
+
+" edit perl
+set iskeyword+=:
+set complete+=k~/.vim/extra/installed_modules
+
+" colorscheme
+colorscheme wombat 
+
+" skelton
+augroup SkeltonAu
+    autocmd!
+    autocmd BufNewFile  *.html 0r $HOME/.vim/templates/skel.html
+    autocmd BufNewFile  *.pl   0r $HOME/.vim/templates/skel.pl
+    autocmd BufNewFile  *.css  0r $HOME/.vim/templates/skel.css
+augroup END
+
+" filetypedetect
+augroup filetypedetect
+    au! BufRead,BufNewFile *.psgi setfiletype perl
+    au! BufRead,BufNewFile *.xt setfiletype html
+augroup END
+ 
+" abbreviation
+"iab phbp #! /usr/bin/perl -w
+
+" buffer
+nnoremap <silent><C-n> :bn<CR>
+nnoremap <silent><C-p> :bp<CR>
+
+" tab
+nnoremap <silent><F2> :tabp<CR>
+nnoremap <silent><F3> :tabn<CR>
+nnoremap :te :tabedit 
+
+" move cursor in insert mode
+inoremap <C-a> <HOME>
+inoremap <C-e> <END>
+inoremap <C-f> <RIGHT>
+inoremap <C-b> <LEFT>
+
+" gtags.vim
+map <C-g> :Gtags 
+map <C-i> :Gtags -f %<CR>
+map <C-j> :GtagsCursor<CR>
+
+" bufferlist.vim
+map <silent><F7> :call BufferList()<CR>
+
+" quickfix
+map <silent><C-c> :cn<CR>
+map <silent><C-C> :cN<CR>
+map <silent><C-l> :cl<CR>
+
+" neo
+let g:neocomplcache_enable_at_startup=1
+let g:neocomplcache_enable_auto_select=1
+au FileType perl setlocal include=
+
+" guivimscheme
+au VimEnter * GuiColorScheme wombat
+

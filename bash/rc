@@ -1,0 +1,15 @@
+case `uname` in
+    Linux)  . ~/dot-files/bash/linux;;
+    Darwin) . ~/dot-files/bash/darwin;;
+esac
+
+if [ -f ~/dot-files/bash/aliases ]; then
+    . ~/dot-files//bash/aliases
+fi
+
+source ~/perl5/perlbrew/etc/bashrc
+source ~/dot-files/bash/pm-tools
+ 
+export PAGER=less
+export EDITOR=vim
+
