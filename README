@@ -37,6 +37,7 @@ and upgrade vim plugins.
 |   |-- 04_servers.sh
 |   |-- 05_vimbundle.sh
 |   `-- 06_perl-modules.list
+|-- module-setup
 |-- gitconfig
 |-- my.cnf
 |-- screenrc
@@ -58,6 +59,7 @@ and upgrade vim plugins.
 * DETAILS
 - bash/                       ... bash settings
 - vim/                        ... vim settings
+- module-setup/               ... moduel-setup settings
 - build-env
   |-- 01_apt.sh               ... apt packages
   |-- 02_perlenv.sh           ... install perlbrew environment
