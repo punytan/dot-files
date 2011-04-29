@@ -10,7 +10,7 @@ Email::Send Email::Sender Email::Simple
 File::Slurp File::Which
 Filesys::Notify::Simple
 JSON JSON::XS YAML YAML::Syck YAML::Tiny
-Web::Scraper XML::Simple
+Web::Scraper XML::Simple XML::RSS XML::Parser
 HTML::Entities::Recursive
 Imager
 URI LWP LWP::Protocol::https WWW::NicoVideo::Download WWW::YouTube::Download
