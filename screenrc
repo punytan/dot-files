@@ -1,5 +1,7 @@
 startup_message off
 
+altscreen on
+
 defbce on
 
 zombie ^[
