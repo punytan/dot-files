@@ -10,7 +10,7 @@ my %file = (
     '.gitconfig'    => 'gitconfig',
     '.my.cnf'       => 'my.cnf',
     '.screenrc'     => 'screenrc',
-    '.ssh/config'   => 'ssh/config',
+    #'.ssh/config'   => 'ssh/config',
     '.vimrc'        => 'vim/vimrc',
     '.module-setup' => 'module-setup',
 );
