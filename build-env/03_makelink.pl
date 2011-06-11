@@ -23,6 +23,6 @@ for my $dot (keys %file) {
 
 rmtree  "$ENV{HOME}/.vim" if -e "$ENV{HOME}/.vim";
 symlink "$ENV{HOME}/dot-files/vim", "$ENV{HOME}/.vim";
+mkdir   "$ENV{HOME}/.screen" unless -e "$ENV{HOME}/.screen";
 
-1;
 __END__
