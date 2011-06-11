@@ -14,3 +14,7 @@ markkeys h=^B:l=^F:$=^E:^U=^Z:^D=^V
 term screen-256color
 
 shell /bin/bash
+
+deflog on
+
+logfile "$HOME/.screen/screen-%Y%m%d-%n.log"
