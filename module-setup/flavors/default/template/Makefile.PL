@@ -7,7 +7,7 @@ all_from 'lib/[% module_unix_path %].pm';
 tests 't/*.t';
 author_tests 'xt';
 
-test_requires 'Test::More';
+test_requires 'Test::More' => 0.98;
 auto_set_repository;
 auto_include;
 WriteAll;
