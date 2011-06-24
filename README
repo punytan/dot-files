@@ -19,7 +19,7 @@ and upgrade vim plugins.
 4. Run build-env/03_makelink.pl as user to make symlinks
 5. Run build-env/04_servers.sh as root if you want to use optional apt packages
 6. Run build-env/05_vimbundle.sh as user to clone vim plugins
-7. Run `cat build-env/06_perl-modules.list | xargs cpanm` as user if you want to use modules
+7. Run `cpanm < build-env/06_perl-modules.list` as user if you want to use modules
 
 * TREE
 |-- README
