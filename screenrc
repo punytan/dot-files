@@ -15,6 +15,6 @@ term screen-256color
 
 shell /bin/bash
 
-deflog on
+#deflog on
 
-logfile "$HOME/.screen/screen-%Y%m%d-%n.log"
+#logfile "$HOME/.screen/screen-%Y%m%d-%n.log"
