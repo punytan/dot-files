@@ -6,7 +6,7 @@ curl -L http://xrl.us/perlbrewinstall | bash;
 
 source ~/perl5/perlbrew/etc/bashrc;
 
-perlbrew install -j 5 perl-5.12.3;
+perlbrew install -j 5 perl-5.12.4 &&
 
 perlbrew switch perl-5.12.3;
 
