@@ -68,10 +68,10 @@ EOM
         perlbrew install "$1" -v &&
 
         echo "@@@@@ Switching new environment"; sleep 1;
-        perlbrew switch "$1";
+        perlbrew switch "$1" &&
 
         echo "@@@@@ Installing cpanminus for new environment"; sleep 1;
-        perlbrew install-cpanm;
+        perlbrew install-cpanm &&
 
         echo "@@@@@ Installing all modules into new environment"; sleep 1;
         cpanm < /tmp/modules.list;
