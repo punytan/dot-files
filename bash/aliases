@@ -1,5 +1,6 @@
 alias la='ls -hal'
 alias gti='git'
+alias crontab='crontab -i'
 
 function pidof { ps aux | grep $1; }
 
