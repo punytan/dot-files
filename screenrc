@@ -18,3 +18,7 @@ shell /bin/bash
 #deflog on
 
 #logfile "$HOME/.screen/screen-%Y%m%d-%n.log"
+
+defencoding utf8
+
+encoding utf8 utf8
