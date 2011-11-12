@@ -59,6 +59,7 @@ augroup END
 augroup filetypedetect
     au! BufRead,BufNewFile *.psgi setfiletype perl
     au! BufRead,BufNewFile *.xt setfiletype html
+    au! BufRead,BufNewFile *.less setfiletype css
 augroup END
  
 " abbreviation
