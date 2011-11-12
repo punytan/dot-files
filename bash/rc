@@ -4,7 +4,7 @@ case `uname` in
 esac
 
 if [ -f ~/dot-files/bash/aliases ]; then
-    . ~/dot-files//bash/aliases
+    . ~/dot-files/bash/aliases
 fi
 
 source ~/perl5/perlbrew/etc/bashrc
