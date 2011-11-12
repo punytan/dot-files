@@ -1,4 +1,4 @@
-use practical;
+use sane;
 use Encode;
 use Data::Dumper;
 
