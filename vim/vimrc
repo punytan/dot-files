@@ -59,7 +59,6 @@ augroup END
 augroup filetypedetect
     au! BufRead,BufNewFile *.psgi setfiletype perl
     au! BufRead,BufNewFile *.xt setfiletype html
-    au! BufRead,BufNewFile *.less setfiletype css
 augroup END
  
 " abbreviation
@@ -100,4 +99,30 @@ au FileType perl setlocal include=
 
 " guivimscheme
 au VimEnter * GuiColorScheme wombat
+
+setlocal path+=;/
+
+function! s:javascript_filetype_settings()
+    setlocal tabstop=2
+    setlocal shiftwidth=2
+    setlocal cindent
+endfunction
+autocmd FileType javascript call s:javascript_filetype_settings()
+
+function! s:html_filetype_settings()
+    setlocal tabstop=2
+    setlocal shiftwidth=2
+    setlocal cindent
+    setlocal includeexpr=substitute(v:fname,'^\\/','','') |
+endfunction
+autocmd FileType html call s:html_filetype_settings()
+
+function! s:css_filetype_settings()
+    setlocal tabstop=2
+    setlocal shiftwidth=2
+    setlocal cindent
+endfunction
+autocmd FileType css  call s:css_filetype_settings()
+autocmd FileType less call s:css_filetype_settings()
+
 
