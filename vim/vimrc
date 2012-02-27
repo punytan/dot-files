@@ -125,4 +125,5 @@ endfunction
 autocmd FileType css  call s:css_filetype_settings()
 autocmd FileType less call s:css_filetype_settings()
 
+autocmd FileType make setlocal noexpandtab
 
