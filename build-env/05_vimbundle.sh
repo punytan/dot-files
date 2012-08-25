@@ -13,7 +13,12 @@ case $1 in
         git clone git://github.com/thinca/vim-quickrun.git;
         git clone git://github.com/Shougo/unite.vim.git;
         git clone git://github.com/thinca/vim-ref.git;
+        git clone git://github.com/kchmck/vim-coffee-script.git;
+        git clone git://github.com/groenewege/vim-less.git;
+        git clone git://github.com/altercation/vim-colors-solarized.git;
+        git clone git://github.com/scrooloose/nerdtree.git;
         ;;
+
     'upgrade')
         dirlista=`find . -maxdepth 1 -type d -print`;
         for d in $dirlista; do
