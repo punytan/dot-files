@@ -13,3 +13,4 @@ source ~/dot-files/bash/pm-tools
 export PAGER=less
 export EDITOR=vim
 
+export PS1='[\t] \u@\h:\w\$ '
