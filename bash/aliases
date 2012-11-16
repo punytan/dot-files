@@ -1,3 +1,4 @@
+alias ls='ls -G'
 alias la='ls -hal'
 alias irc='screen -Udr irc'
 alias crontab='crontab -i'
