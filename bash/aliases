@@ -10,7 +10,5 @@ alias gdc='git diff --cached'
 alias gdh='git diff HEAD'
 alias gc='git commit -m'
 
-alias pad="plackup -MPlack::App::Directory -s Twiggy -e 'Plack::App::Directory->new->to_app'"
-
 function pidof { ps aux | grep $1; }
 
