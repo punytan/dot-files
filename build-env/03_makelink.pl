@@ -7,6 +7,7 @@ use File::Path;
 my %file = (
     '.bashrc'       => 'bash/rc',
     '.bash_logout'  => 'bash/logout',
+    '.inputrc'      => 'inputrc',
     '.gitconfig'    => 'gitconfig',
     '.my.cnf'       => 'my.cnf',
     '.screenrc'     => 'screenrc',
