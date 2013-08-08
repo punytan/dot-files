@@ -5,6 +5,7 @@ alias irc='screen -Udr irc'
 alias crontab='crontab -i'
 
 alias gti='git'
+alias gg='git grep'
 alias ga='git add'
 alias gs='git status'
 alias gd='git diff'
