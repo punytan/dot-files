@@ -16,7 +16,10 @@ case $1 in
         git clone git://github.com/kchmck/vim-coffee-script.git;
         git clone git://github.com/groenewege/vim-less.git;
         git clone git://github.com/altercation/vim-colors-solarized.git;
-        git clone git://github.com/scrooloose/nerdtree.git;
+        git clone git://github.com/hallison/vim-markdown.git;
+        git clone git://github.com/vim-scripts/sudo.vim.git;
+        git clone git://github.com/tpope/vim-fugitive.git;
+        git clone https://github.com/airblade/vim-gitgutter.git;
         ;;
 
     'upgrade')
