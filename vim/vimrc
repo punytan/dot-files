@@ -103,6 +103,13 @@ au VimEnter * GuiColorScheme wombat
 
 setlocal path+=;/
 
+function! s:ruby_filetype_settings()
+    setlocal tabstop=2
+    setlocal shiftwidth=2
+    setlocal cindent
+endfunction
+autocmd FileType ruby call s:ruby_filetype_settings()
+
 function! s:javascript_filetype_settings()
     setlocal tabstop=2
     setlocal shiftwidth=2
