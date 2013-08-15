@@ -19,7 +19,10 @@ case $1 in
         git clone git://github.com/hallison/vim-markdown.git;
         git clone git://github.com/vim-scripts/sudo.vim.git;
         git clone git://github.com/tpope/vim-fugitive.git;
-        git clone https://github.com/airblade/vim-gitgutter.git;
+        git clone git://github.com/airblade/vim-gitgutter.git;
+        git clone git://github.com/jnwhiteh/vim-golang.git;
+        git clone git://github.com/haskell/haskell-mode-vim.git;
+        git clone git://github.com/ujihisa/ref-hoogle.git;
         ;;
 
     'upgrade')
