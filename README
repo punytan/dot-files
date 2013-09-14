@@ -40,7 +40,6 @@ and upgrade vim plugins.
 |-- module-setup
 |-- gitconfig
 |-- my.cnf
-|-- screenrc
 |-- ssh
 |   `-- config
 `-- vim

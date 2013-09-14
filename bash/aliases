@@ -1,7 +1,6 @@
 alias ls='ls -G'
 alias la='ls -hal'
 alias ll='la'
-alias irc='screen -Udr irc'
 alias crontab='crontab -i'
 
 alias gti='git'

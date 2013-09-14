@@ -10,10 +10,8 @@ my %file = (
     '.inputrc'      => 'inputrc',
     '.gitconfig'    => 'gitconfig',
     '.my.cnf'       => 'my.cnf',
-    '.screenrc'     => 'screenrc',
     #'.ssh/config'   => 'ssh/config',
     '.vimrc'        => 'vim/vimrc',
-    '.module-setup' => 'module-setup',
 );
 
 for my $dot (keys %file) {
@@ -24,6 +22,5 @@ for my $dot (keys %file) {
 
 rmtree  "$ENV{HOME}/.vim" if -e "$ENV{HOME}/.vim";
 symlink "$ENV{HOME}/dot-files/vim", "$ENV{HOME}/.vim";
-mkdir   "$ENV{HOME}/.screen" unless -e "$ENV{HOME}/.screen";
 
 __END__
