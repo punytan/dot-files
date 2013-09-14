@@ -23,6 +23,7 @@ case $1 in
         git clone git://github.com/jnwhiteh/vim-golang.git;
         git clone git://github.com/haskell/haskell-mode-vim.git;
         git clone git://github.com/ujihisa/ref-hoogle.git;
+        git clone git@github.com:derekwyatt/vim-scala.git;
         ;;
 
     'upgrade')
