@@ -9,9 +9,13 @@ fi
 
 source ~/perl5/perlbrew/etc/bashrc
 source ~/dot-files/bash/pm-tools
- 
+
 export PAGER=less
 export EDITOR=vim
 export LC_ALL=C
 
 export PS1='[\t] \u@\h:\w\$ '
+
+eval "$(rbenv init -)"
+[ -s $HOME/.nvm/nvm.sh ] && . $HOME/.nvm/nvm.sh # This loads NVM
+
