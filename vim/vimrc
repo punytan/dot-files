@@ -60,8 +60,9 @@ augroup filetypedetect
     au! BufRead,BufNewFile *.psgi setfiletype perl
     au! BufRead,BufNewFile *.xt setfiletype html
     au! BufRead,BufNewFile *.go set filetype=go
+    au! BufRead,BufNewFile *.jade setfiletyp jade
 augroup END
- 
+
 " abbreviation
 "iab phbp #! /usr/bin/perl -w
 
@@ -103,12 +104,14 @@ au VimEnter * GuiColorScheme wombat
 
 setlocal path+=;/
 
-function! s:ruby_filetype_settings()
+function! s:two_space_filetype_settings()
     setlocal tabstop=2
     setlocal shiftwidth=2
     setlocal cindent
 endfunction
-autocmd FileType ruby call s:ruby_filetype_settings()
+autocmd FileType ruby call s:two_space_filetype_settings()
+autocmd FileType coffee call s:two_space_filetype_settings()
+autocmd FileType jade call s:two_space_filetype_settings()
 
 function! s:javascript_filetype_settings()
     setlocal tabstop=2
