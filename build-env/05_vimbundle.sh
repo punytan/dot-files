@@ -25,6 +25,7 @@ case $1 in
         git clone git://github.com/ujihisa/ref-hoogle.git;
         git clone git@github.com:derekwyatt/vim-scala.git;
         git clone git@github.com:digitaltoad/vim-jade.git;
+        git clone git://github.com/msanders/cocoa.vim.git;
         ;;
 
     'upgrade')
