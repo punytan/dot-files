@@ -8,23 +8,26 @@ cd "$HOME/dot-files/vim/bundle";
 
 case $1 in
     'install')
+        # color scheme
         git clone git://github.com/thinca/vim-guicolorscheme.git;
+        git clone git://github.com/altercation/vim-colors-solarized.git;
+        # git stuff
+        git clone git://github.com/tpope/vim-fugitive.git;
+        git clone git://github.com/airblade/vim-gitgutter.git;
+        # syntax highlight
+        git clone git://github.com/kchmck/vim-coffee-script.git;
+        git clone git://github.com/groenewege/vim-less.git;
+        git clone git://github.com/hallison/vim-markdown.git;
+        git clone git://github.com/jnwhiteh/vim-golang.git;
+        git clone git://github.com/derekwyatt/vim-scala.git;
+        git clone git://github.com/digitaltoad/vim-jade.git;
+        git clone git://github.com/msanders/cocoa.vim.git;
+        # utility
         git clone git://github.com/Shougo/neocomplcache.git;
         git clone git://github.com/thinca/vim-quickrun.git;
         git clone git://github.com/Shougo/unite.vim.git;
         git clone git://github.com/thinca/vim-ref.git;
-        git clone git://github.com/kchmck/vim-coffee-script.git;
-        git clone git://github.com/groenewege/vim-less.git;
-        git clone git://github.com/altercation/vim-colors-solarized.git;
-        git clone git://github.com/hallison/vim-markdown.git;
         git clone git://github.com/vim-scripts/sudo.vim.git;
-        git clone git://github.com/tpope/vim-fugitive.git;
-        git clone git://github.com/airblade/vim-gitgutter.git;
-        git clone git://github.com/jnwhiteh/vim-golang.git;
-        git clone git://github.com/ujihisa/ref-hoogle.git;
-        git clone git@github.com:derekwyatt/vim-scala.git;
-        git clone git@github.com:digitaltoad/vim-jade.git;
-        git clone git://github.com/msanders/cocoa.vim.git;
         ;;
 
     'upgrade')
