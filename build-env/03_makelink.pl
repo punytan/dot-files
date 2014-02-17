@@ -9,6 +9,7 @@ my %file = (
     '.bash_logout'  => 'bash/logout',
     '.inputrc'      => 'inputrc',
     '.gitconfig'    => 'gitconfig',
+    '.gitignore'    => 'gitignore',
     '.my.cnf'       => 'my.cnf',
     #'.ssh/config'   => 'ssh/config',
     '.vimrc'        => 'vim/vimrc',
