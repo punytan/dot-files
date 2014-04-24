@@ -18,10 +18,7 @@ case $1 in
         git clone git://github.com/kchmck/vim-coffee-script.git;
         git clone git://github.com/groenewege/vim-less.git;
         git clone git://github.com/hallison/vim-markdown.git;
-        git clone git://github.com/jnwhiteh/vim-golang.git;
-        git clone git://github.com/derekwyatt/vim-scala.git;
         git clone git://github.com/digitaltoad/vim-jade.git;
-        git clone git://github.com/msanders/cocoa.vim.git;
         # utility
         git clone git://github.com/Shougo/neocomplcache.git;
         git clone git://github.com/thinca/vim-quickrun.git;
