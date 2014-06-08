@@ -13,6 +13,7 @@ my %file = (
     '.my.cnf'       => 'my.cnf',
     #'.ssh/config'   => 'ssh/config',
     '.vimrc'        => 'vim/vimrc',
+    '.tmux.conf'    => 'tmux.conf',
 );
 
 for my $dot (keys %file) {
