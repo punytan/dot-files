@@ -18,6 +18,9 @@ export LC_ALL=en_US.UTF-8
 
 export PS1='[\t] \u@\h:\w\$ '
 
+export GOPATH=$HOME/src
+export PATH=$PATH:$HOME/src/bin
+
 eval "$(rbenv init -)"
 [ -s $HOME/.nvm/nvm.sh ] && . $HOME/.nvm/nvm.sh # This loads NVM
 
