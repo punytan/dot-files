@@ -12,6 +12,7 @@ alias gdc='git diff --cached'
 alias gdh='git diff HEAD'
 alias gc='git commit -m'
 alias gdd='git log --decorate --stat --patch'
+alias gl='ghq list -p |  peco --null'
 
 function pidof { ps aux | grep $1; }
 
