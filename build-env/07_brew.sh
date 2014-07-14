@@ -5,8 +5,6 @@ brew install tmux
 brew install rbenv
 brew install ruby-build
 brew install tree
-brew install boot2docker
-brew install docker
 brew install htop-osx
 
 brew tap peco/peco
