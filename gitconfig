@@ -17,4 +17,4 @@
     df = diff
     tree = log --graph --pretty='format:%C(yellow)%h%Creset %s %Cgreen(%an)%Creset %Cred%d%Creset'
 [ghq]
-	root = ~/Dropbox/repos
+	root = ~/sync/repos
