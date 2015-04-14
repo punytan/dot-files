@@ -55,6 +55,8 @@ augroup SkeltonAu
     autocmd BufNewFile  *.css  0r $HOME/.vim/templates/skel.css
 augroup END
 
+set shell=/bin/bash\ -l\ -O\ expand_aliases
+
 " filetypedetect
 augroup filetypedetect
     au! BufRead,BufNewFile *.psgi setfiletype perl
