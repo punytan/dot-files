@@ -18,3 +18,6 @@
     tree = log --graph --pretty='format:%C(yellow)%h%Creset %s %Cgreen(%an)%Creset %Cred%d%Creset'
 [ghq]
 	root = ~/sync/repos
+
+[grep]
+    lineNumber = true
