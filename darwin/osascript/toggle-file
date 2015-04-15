@@ -1,0 +1,28 @@
+#!/usr/bin/osascript
+
+on run argv
+  set AppName to (first item of argv) & ".app"
+  set FilePath to (second item of argv)
+  set cFile to ""
+
+    if application AppName is frontmost then
+        tell application AppName
+            try
+                set cFile to POSIX path of (get file of document 1)
+            end try
+            if cFile is FilePath then
+                tell application "System Events"
+                    set frontProcess to first process whose frontmost is true
+                    set visible of frontProcess to false
+                end tell
+            else
+                open FilePath
+            end if
+        end tell
+    else
+        tell application AppName
+            activate
+            open FilePath
+        end tell
+    end if
+end run

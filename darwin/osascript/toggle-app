@@ -1,0 +1,14 @@
+#!/usr/bin/osascript
+
+on run argv
+    set AppName to (first item of argv) & ".app"
+    if application AppName is frontmost then
+        -- tell application "System Events" to keystroke tab using {command down}
+        tell application "System Events"
+            set frontProcess to first process whose frontmost is true
+            set visible of frontProcess to false
+        end tell
+    else
+        activate application AppName
+    end if
+end run
