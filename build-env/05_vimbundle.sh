@@ -23,6 +23,7 @@ case $1 in
         git clone git://github.com/wting/rust.vim.git;
         git clone git@github.com:derekwyatt/vim-scala.git;
         git clone git@github.com:toyamarinyon/vim-swift.git;
+        git clone git://github.com/fatih/vim-go.git;
         # utility
         git clone git://github.com/Shougo/neocomplcache.git;
         git clone git://github.com/thinca/vim-quickrun.git;
