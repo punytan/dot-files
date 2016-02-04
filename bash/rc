@@ -27,7 +27,6 @@ export PATH=$PATH:$HOME/src/bin
 # nvm
 [ -s $HOME/.nvm/nvm.sh ] && . $HOME/.nvm/nvm.sh # This loads NVM
 
+# set docker env
+eval `docker-machine env default 2> /dev/null`
 
-export DOCKER_HOST=tcp://192.168.59.103:2376
-export DOCKER_CERT_PATH=$HOME/.boot2docker/certs/boot2docker-vm
-export DOCKER_TLS_VERIFY=1
