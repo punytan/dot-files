@@ -145,3 +145,13 @@ augroup HighlightTrailingSpaces
     autocmd VimEnter,WinEnter,ColorScheme * highlight TrailingSpaces term=underline guibg=Red ctermbg=Red
     autocmd VimEnter,WinEnter * match TrailingSpaces /\s\+$/
 augroup END
+
+" augroup HighlightUnwantedTab
+"     autocmd!
+"     autocmd VimEnter,WinEnter,ColorScheme * highlight UnwantedTab term=underline guibg=Red ctermbg=Red
+"     autocmd VimEnter,WinEnter * match UnwantedTab /\t/
+" augroup END
+
+" http://stackoverflow.com/questions/31695455/vim-how-do-i-disable-the-default-logipat-plugin
+let g:loaded_logipat = 1
+
