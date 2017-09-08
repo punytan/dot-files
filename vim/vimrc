@@ -1,3 +1,4 @@
+set backupskip=/tmp/*,/private/tmp/*
 set t_Co=256
 syntax on
 
