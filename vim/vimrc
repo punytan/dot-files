@@ -62,6 +62,7 @@ set shell=/bin/bash\ -l\ -O\ expand_aliases
 augroup filetypedetect
     au! BufRead,BufNewFile *.psgi setfiletype perl
     au! BufRead,BufNewFile *.xt setfiletype html
+    au! BufRead,BufNewFile *.tx setfiletype html
     au! BufRead,BufNewFile *.go set filetype=go
     au! BufRead,BufNewFile *.jade setfiletyp jade
 augroup END
