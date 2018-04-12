@@ -15,5 +15,7 @@ alias gdd='git log --decorate --stat --patch'
 alias gpom='git pull origin master'
 alias gl='cd $(ghq list -p |  peco --null)'
 
+alias be='bundle exec'
+
 function pidof { ps aux | grep $1; }
 
