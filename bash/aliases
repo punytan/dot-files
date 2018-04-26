@@ -19,3 +19,5 @@ alias be='bundle exec'
 
 function pidof { ps aux | grep $1; }
 
+alias pretty-json='perl -MJSON::XS -le '"'"'$str = do { local $/; <> }; print(eval { JSON::XS->new->utf8->canonical->pretty->encode(JSON::XS::decode_json $str) } // $str)'"'"
+
