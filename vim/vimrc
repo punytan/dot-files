@@ -113,6 +113,8 @@ function! s:two_space_filetype_settings()
     setlocal shiftwidth=2
     setlocal cindent
 endfunction
+autocmd FileType yaml call s:two_space_filetype_settings()
+autocmd FileType sql call s:two_space_filetype_settings()
 autocmd FileType ruby call s:two_space_filetype_settings()
 autocmd FileType coffee call s:two_space_filetype_settings()
 autocmd FileType jade call s:two_space_filetype_settings()
