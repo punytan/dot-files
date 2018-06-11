@@ -15,14 +15,10 @@ case $1 in
         git clone git://github.com/tpope/vim-fugitive.git;
         git clone git://github.com/airblade/vim-gitgutter.git;
         # syntax highlight
-        git clone git://github.com/kchmck/vim-coffee-script.git;
         git clone git://github.com/groenewege/vim-less.git;
         git clone git://github.com/hallison/vim-markdown.git;
-        git clone git://github.com/digitaltoad/vim-jade.git;
         git clone git://github.com/jnwhiteh/vim-golang.git;
         git clone git://github.com/wting/rust.vim.git;
-        git clone git@github.com:derekwyatt/vim-scala.git;
-        git clone git@github.com:toyamarinyon/vim-swift.git;
         git clone git://github.com/fatih/vim-go.git;
         git clone git@github.com:leafgarland/typescript-vim.git;
         # utility
