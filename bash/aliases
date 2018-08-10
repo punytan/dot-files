@@ -16,6 +16,7 @@ alias gdh='git diff HEAD'
 alias gc='git commit -m'
 alias gdd='git log --decorate --stat --patch'
 alias gpom='git pull origin master'
+alias git-purge-branch='git br | grep -v master | xargs -I{} git br -d {}'
 alias gl='cd $(ghq list -p |  peco --null)'
 
 alias be='bundle exec'
