@@ -5,9 +5,12 @@ alias crontab='crontab -i'
 
 alias gti='git'
 alias gg='git grep'
+function ggv { git grep $1 -- ':!vendor' ${@:2}; }
 alias ga='git add'
 alias gs='git status --branch --short'
+alias gsv='git status --branch --short -- . ":!vendor"'
 alias gd='git diff'
+alias gdv='git diff -- . ":!vendor"'
 alias gdc='git diff --cached'
 alias gdh='git diff HEAD'
 alias gc='git commit -m'
