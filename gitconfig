@@ -21,6 +21,8 @@
 
 [ghq]
 	root = ~/sync/repos
+	root = ~/src/src
+	root = ~/no-sync/repos
 
 [grep]
     lineNumber = true
