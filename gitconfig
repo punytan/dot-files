@@ -21,7 +21,7 @@
 
 [ghq]
 	root = ~/sync/repos
-	root = ~/src/src
+	root = ~/go/src
 	root = ~/no-sync/repos
 
 [grep]
