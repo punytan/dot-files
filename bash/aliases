@@ -19,6 +19,7 @@ alias git-purge-branch='git br | grep -v master | xargs -I{} git br -d {}'
 alias gl='cd $(ghq list -p |  peco --null)'
 
 alias be='bundle exec'
+alias dc='docker-compose'
 
 function pidof { ps aux | grep $1; }
 
