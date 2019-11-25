@@ -16,7 +16,7 @@ export LC_ALL=en_US.UTF-8
 
 export PS1='\[\e[34m\][\D{%Y-%m-%d} \t] \h:\w\$\[\e[0m\] '
 export GOPATH=$HOME/go
-export PATH=$PATH:$HOME/go/bin
+export PATH=$PATH:$HOME/go/bin:./node_modules/.bin
 
 # perlbrew
 [ -s ~/perl5/perlbrew/etc/bashrc ] && . ~/perl5/perlbrew/etc/bashrc
