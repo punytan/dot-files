@@ -2,30 +2,30 @@
 defaultBranch = main
 
 [user]
-	name = punytan
-	email = punytan@gmail.com
+name  = punytan
+email = punytan@gmail.com
 
 [color]
-    ui = auto
+ui = auto
 
 [core]
-    editor = vim
-    excludesfile = ~/.gitignore
+editor       = vim
+excludesfile = ~/.gitignore
 
 [alias]
-    co = checkout
-    br = branch
-    ci = commit
-    st = status
-    df = diff
-    gpre = grep
-    gerp = grep
-    tree = log --graph --pretty='format:%C(yellow)%h%Creset %s %Cgreen(%an)%Creset %Cred%d%Creset'
+co   = checkout
+br   = branch
+ci   = commit
+st   = status
+df   = diff
+gpre = grep
+gerp = grep
+tree = log --graph --pretty='format:%C(yellow)%h%Creset %s %Cgreen(%an)%Creset %Cred%d%Creset'
 
 [ghq]
-	root = ~/sync/repos
-	root = ~/go/src
-	root = ~/no-sync/repos
+root = ~/sync/repos
+root = ~/go/src
+root = ~/no-sync/repos
 
 [grep]
-    lineNumber = true
+lineNumber = true
