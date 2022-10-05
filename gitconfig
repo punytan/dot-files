@@ -1,3 +1,6 @@
+[init]
+defaultBranch = main
+
 [user]
 	name = punytan
 	email = punytan@gmail.com
