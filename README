@@ -23,7 +23,6 @@ and upgrade vim plugins.
 |-- bash
 |   |-- aliases
 |   |-- darwin
-|   |-- linux
 |   |-- logout
 |   `-- rc
 |-- build-env
