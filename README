@@ -25,7 +25,6 @@ and upgrade vim plugins.
 |   |-- darwin
 |   |-- linux
 |   |-- logout
-|   |-- pm-tools
 |   `-- rc
 |-- build-env
 |   |-- 02_perlenv.sh

@@ -7,8 +7,6 @@ if [ -f ~/dot-files/bash/aliases ]; then
     . ~/dot-files/bash/aliases
 fi
 
-source ~/dot-files/bash/pm-tools
-
 export PAGER=less
 export EDITOR=vim
 export LC_CTYPE=en_US.UTF-8
