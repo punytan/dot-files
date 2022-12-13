@@ -1,2 +1,0 @@
-alias cc = ~ ;eval "\u001B[2J\u001B[0\u003B0H" ;compile
-
