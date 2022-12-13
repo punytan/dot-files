@@ -18,6 +18,9 @@ alias gpom='git pull origin master'
 alias git-purge-branch='git br | grep -v master | xargs -I{} git br -d {}'
 alias gl='cd $(ghq list -p |  peco --null)'
 
+alias k='kubectl'
+alias kd='kubectl describe'
+
 alias be='bundle exec'
 alias dc='docker-compose'
 
